@@ -85,7 +85,7 @@ class colorImage():
 
     def makeHue(self):
         HSV_Image = cv2.cvtColor(self.image, cv2.COLOR_BGR2HSV)
-        HSV_Image[:, :, 1] = 0
-        HSV_Image[:, :, 2] = 0
+        HSV_Image[:, :, 1] = 255
+        HSV_Image[:, :, 2] = 255
         Tones_Image = cv2.cvtColor(self.image, cv2.COLOR_HSV2BGR)
         return Tones_Image
