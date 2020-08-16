@@ -38,7 +38,7 @@ if __name__ == '__main__':
     image = ci.colorImage(input('Insert complete path of image (with filename and format):'))
 
     # -- Display Properties
-    gray_image = image.displayProperties()
+    image.displayProperties()
 
     # -- Gray Image
     gray_image = image.makeGray()
